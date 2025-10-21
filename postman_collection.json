@@ -1,0 +1,23 @@
+{
+  "info": {
+    "name": "My First API Collection",
+    "_postman_id": "00000000-0000-0000-0000-000000000000",
+    "description": "A template Postman collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Example",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/example",
+          "host": ["{{base_url}}"],
+          "path": ["example"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
