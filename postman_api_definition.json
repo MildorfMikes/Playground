@@ -1,0 +1,99 @@
+{
+  "info": {
+    "name": "Sample API Definition",
+    "_postman_id": "00000000-0000-0000-0000-000000000000",
+    "description": "This is a template API definition for importing into Postman.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Users",
+      "description": "Endpoints related to users",
+      "item": [
+        {
+          "name": "Get all users",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/users",
+              "host": ["{{base_url}}"],
+              "path": ["users"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create a user",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/users",
+              "host": ["{{base_url}}"],
+              "path": ["users"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Posts",
+      "description": "Endpoints related to posts",
+      "item": [
+        {
+          "name": "Get all posts",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/posts",
+              "host": ["{{base_url}}"],
+              "path": ["posts"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create a post",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"My first post\",\n  \"content\": \"Hello world!\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/posts",
+              "host": ["{{base_url}}"],
+              "path": ["posts"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "https://api.example.com",
+      "type": "string"
+    }
+  ]
+}
